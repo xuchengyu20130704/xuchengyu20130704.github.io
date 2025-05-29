@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>我的主页</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+      min-height: 100vh;
+      margin: 0;
+      font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container {
+      background: rgba(255,255,255,0.9);
+      margin-top: 8vh;
+      padding: 40px 32px 32px 32px;
+      border-radius: 18px;
+      box-shadow: 0 8px 32px rgba(49,54,68,0.15);
+      max-width: 420px;
+      width: 90vw;
+      text-align: center;
+      animation: fadeIn 1s;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(40px);}
+      to { opacity: 1; transform: none;}
+    }
+    h1 {
+      margin-bottom: 16px;
+      font-size: 2.2em;
+      background: linear-gradient(90deg, #a770ef 30%, #f6d365 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 24px 0 0 0;
+    }
+    li {
+      margin: 18px 0;
+    }
+    a {
+      display: inline-block;
+      padding: 13px 38px;
+      border-radius: 25px;
+      background: linear-gradient(90deg,#70e1f5,#ffd194);
+      box-shadow: 0 2px 8px rgba(160,160,160,0.1);
+      color: #222;
+      text-decoration: none;
+      font-size: 1.15em;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.2s;
+    }
+    a:hover {
+      background: linear-gradient(90deg,#fbc2eb,#a6c1ee);
+      color: #1a237e;
+      transform: translateY(-2px) scale(1.04);
+      box-shadow: 0 4px 18px rgba(120,120,160,0.11);
+    }
+    @media (max-width: 480px) {
+      .container { padding: 22px 4vw 16px 4vw;}
+      h1 { font-size: 1.35em;}
+      a { padding: 11px 10vw; font-size: 1em;}
+    }
+    .footer {
+      margin-top: 30px;
+      font-size: 0.97em;
+      color: #888;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>欢迎来到我的主页</h1>
+    <ul>
+      <li>
+        <a href="https://xuchengyu20130704.github.io/treehole/" target="_blank" rel="noopener"> Treehole</a>
+      </li>
+      <li>
+        <a href="https://xuchengyu20130704.github.io/quiet-tree/" target="_blank" rel="noopener"> Quiet Tree</a>
+      </li>
+    </ul>
+    <div class="footer">
+      © 2025 xuchengyu20130704 &nbsp;|&nbsp; <a href="https://github.com/xuchengyu20130704" target="_blank" style="color:#a770ef;text-decoration:underline;">GitHub</a>
+    </div>
+  </div>
+</body>
+</html>
